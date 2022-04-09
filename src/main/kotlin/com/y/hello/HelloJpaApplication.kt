@@ -40,7 +40,7 @@ class HelloJpaApplication {
 			log.info("--------------------------------------------")
 			repository.findByLastName("Bauer")!!.forEach {
 				//log.info(it.toString())
-				println(it.toString())
+				println(it)
 			}
 			log.info("")
 		}
