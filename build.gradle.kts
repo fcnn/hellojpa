@@ -21,8 +21,8 @@ repositories {
 extra["springCloudVersion"] = "2022.0.0-M2"
 
 dependencies {
-	//implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
-	//implementation("org.postgresql:r2dbc-postgresql")
+	implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
+	implementation("org.postgresql:r2dbc-postgresql")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
 	implementation("org.springframework.boot:spring-boot-starter-webflux")

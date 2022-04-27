@@ -7,11 +7,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import reactor.core.publisher.Mono
 
 @Configuration
 @SpringBootApplication
 class HelloJpaApplication {
-	@Bean
+	//@Bean
 	fun demo(repository: CustomerRepository): CommandLineRunner {
 		return CommandLineRunner { args: Array<String?>? ->
 			// save a few customers
@@ -54,6 +55,14 @@ class HelloJpaApplication {
 	}
 }
 
+fun testR2Dbc() {
+//	val factory = ConnectionFactories.get()
+//	Mono.create(
+//
+//	)
+}
+
 fun main(args: Array<String>) {
+	testR2Dbc()
 	runApplication<HelloJpaApplication>(*args)
 }
