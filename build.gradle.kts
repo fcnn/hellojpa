@@ -3,9 +3,9 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
 	id("org.springframework.boot") version "3.0.0-SNAPSHOT"
 	id("io.spring.dependency-management") version "1.0.11.RELEASE"
-	kotlin("jvm") version "1.7.0"
-	kotlin("plugin.spring") version "1.7.0"
-	kotlin("plugin.jpa") version "1.7.0"
+	kotlin("jvm") version "1.7.10"
+	kotlin("plugin.spring") version "1.7.10"
+	kotlin("plugin.jpa") version "1.7.10"
 }
 
 group = "com.y"
@@ -55,6 +55,6 @@ tasks.withType<Test> {
 }
 
 tasks.wrapper {
-  gradleVersion = "7.5-rc-3"
+  gradleVersion = "7.5-rc-5"
   distributionType = Wrapper.DistributionType.ALL
 }
