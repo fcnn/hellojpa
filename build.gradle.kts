@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
 	id("org.springframework.boot") version "3.0.0-SNAPSHOT"
-	id("io.spring.dependency-management") version "1.0.12.RELEASE"
+	id("io.spring.dependency-management") version "1.0.13.RELEASE"
 	kotlin("jvm") version "1.7.10"
 	kotlin("plugin.spring") version "1.7.10"
 	kotlin("plugin.jpa") version "1.7.10"
@@ -18,7 +18,7 @@ repositories {
 	maven { url = uri("https://repo.spring.io/snapshot") }
 }
 
-extra["springCloudVersion"] = "2022.0.0-M3"
+extra["springCloudVersion"] = "2022.0.0-M4"
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
@@ -55,6 +55,6 @@ tasks.withType<Test> {
 }
 
 tasks.wrapper {
-  gradleVersion = "7.5"
+  gradleVersion = "7.5.1"
   distributionType = Wrapper.DistributionType.ALL
 }
