@@ -55,6 +55,6 @@ tasks.withType<Test> {
 }
 
 tasks.wrapper {
-  gradleVersion = "7.5.1"
+  gradleVersion = "8.0-milestone-1"
   distributionType = Wrapper.DistributionType.ALL
 }
