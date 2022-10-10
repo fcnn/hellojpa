@@ -3,9 +3,9 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
 	id("org.springframework.boot") version "3.0.0-SNAPSHOT"
 	id("io.spring.dependency-management") version "1.0.14.RELEASE"
-	kotlin("jvm") version "1.7.20-RC"
-	kotlin("plugin.spring") version "1.7.20-RC"
-	kotlin("plugin.jpa") version "1.7.20-RC"
+	kotlin("jvm") version "1.7.20"
+	kotlin("plugin.spring") version "1.7.20"
+	kotlin("plugin.jpa") version "1.7.20"
 }
 
 group = "com.y"
@@ -46,7 +46,7 @@ dependencyManagement {
 tasks.withType<KotlinCompile> {
 	kotlinOptions {
 		freeCompilerArgs = listOf("-Xjsr305=strict")
-		jvmTarget = "19"
+		jvmTarget = "18"
 	}
 }
 
@@ -55,6 +55,6 @@ tasks.withType<Test> {
 }
 
 tasks.wrapper {
-  gradleVersion = "8.0-milestone-1"
+  gradleVersion = "8.0-milestone-2"
   distributionType = Wrapper.DistributionType.ALL
 }
