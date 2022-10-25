@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
 	id("org.springframework.boot") version "3.0.0-SNAPSHOT"
-	id("io.spring.dependency-management") version "1.0.14.RELEASE"
+	id("io.spring.dependency-management") version "1.1.0"
 	kotlin("jvm") version "1.7.20"
 	kotlin("plugin.spring") version "1.7.20"
 	kotlin("plugin.jpa") version "1.7.20"
@@ -18,7 +18,7 @@ repositories {
 	maven { url = uri("https://repo.spring.io/snapshot") }
 }
 
-extra["springCloudVersion"] = "2022.0.0-M4"
+extra["springCloudVersion"] = "2022.0.0-M5"
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
