@@ -1,11 +1,11 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-	id("org.springframework.boot") version "3.0.0-SNAPSHOT"
+	id("org.springframework.boot") version "3.0.1-SNAPSHOT"
 	id("io.spring.dependency-management") version "1.1.0"
-	kotlin("jvm") version "1.7.21"
-	kotlin("plugin.spring") version "1.7.21"
-	kotlin("plugin.jpa") version "1.7.21"
+	kotlin("jvm") version "1.8.0-Beta"
+	kotlin("plugin.spring") version "1.8.0-Beta"
+	kotlin("plugin.jpa") version "1.8.0-Beta"
 }
 
 group = "com.y"
@@ -18,7 +18,7 @@ repositories {
 	maven { url = uri("https://repo.spring.io/snapshot") }
 }
 
-extra["springCloudVersion"] = "2022.0.0-M5"
+extra["springCloudVersion"] = "2022.0.0-RC2"
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
